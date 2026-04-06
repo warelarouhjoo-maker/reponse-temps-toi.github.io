@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Revelaté</title>
+</head>
+<body>
+
+  <!-- Section 0 : question secrète -->
+  <div id="div0">
+    <div class="card">
+      <form id="form0">
+        <label for="name">
+          Tu es la seule personne à qui j'ai envoyé ce lien.<br>
+          Donc tu pourras trouver la réponse.<br><br>
+          <em>Quel est le surnom que je t'ai donné ?</em>
+        </label>
+        <input type="text" id="name" name="name" placeholder="ton surnom…" autocomplete="off">
+        <div style="text-align:center">
+          <button type="submit">entrer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Section 1 : bien-être / filière -->
+  <div id="div1">
+    <div class="card">
+      <h3>ça faisait longtemps !</h3>
+      <h3>
+        Longtemps que je ne t'avais pas écrit ni même parlé.<br>
+        C'est pas aujourd'hui qu'on se connait.<br>
+        Je suis quelqu'un qui n'aime pas discuter via les réseaux,
+        c'est pour ça que j'ai dû faire ce site.<br>
+        <span style="color:rgba(240,230,239,0.35);font-size:0.8rem;">
+          (NB : je sais que t'es bonne en français, alors évite de corriger ce que j'écris 😄)
+        </span>
+      </h3>
+      <form id="form1">
+        <label for="sante">Comment ça va ?</label>
+        <input type="text" name="sante" id="sante" placeholder="ta réponse…" autocomplete="off">
+        <label for="fil">Et tu m'as toujours pas dit — tu as choisi quelle filière ?</label>
+        <input type="text" name="fil" id="fil" placeholder="ta filière…" autocomplete="off">
+        <div style="text-align:center;margin-top:28px">
+          <button type="submit">soumettre</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Section 2 : message introspectif -->
+  <div id="div2">
+    <div class="card">
+      <h3>
+        J'ai pris du temps pour réfléchir à tout.<br>
+        Même si c'était long et incompréhensible,
+        j'ai fini par me dire que
+        <span class="highlight">abandonner n'est pas une option viable.</span><br><br>
+        Ça va t'étonner, mais ce qui m'a décidé
+        s'est passé la nuit du 5/4/2026 —
+        j'ai fait un rêve dont j'ai oublié presque tout,
+        mais je me souvenais d'une et une seule personne
+        qui <span class="highlight">souriait</span>.<br><br>
+        Cette personne, bien évidemment, c'était toi.<br>
+        L'image m'est restée en tête —
+        c'est à ce instant précis que j'ai compris :
+        <span class="highlight">abandonner n'est pas une option.</span><br><br>
+        Comme j'aime pas trop les réseaux,
+        je profite pour réviser.
+      </h3>
+    </div>
+  </div>
+
+  <!-- Section 3 : question finale -->
+  <div id="div3">
+    <div id="main-card" class="card">
+      <form id="form3">
+        <h2>Me laisseras-tu une chance ?</h2>
+        <div id="btn-row">
+          <button type="button" id="btn-oui">Oui 💗</button>
+          <button type="button" id="btn-non">🎵 Lancer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast"></div>
+
+  <audio id="music" loop src="A2_compressed.mp3"></audio>
+
+  <script src="vision.js"></script>
+</body>
+</html>
