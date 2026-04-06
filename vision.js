@@ -64,7 +64,7 @@ document.getElementById("form1").addEventListener("submit", function (e) {
 
 // ── Musique ───────────────────────────────────────────────────
 const audio  = document.getElementById("music");
-const btnNon = document.getElementById("btn-non");
+const btnNon = document.getElementById("name");
 
 btnNon.addEventListener("click", function () {
   if (audio.paused) {
